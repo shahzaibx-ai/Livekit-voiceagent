@@ -1,0 +1,23 @@
+[project]
+name = "livekit-voiceagent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Shah", email = "mszaibi007@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "gradio>=6.29.0",
+    "livekit-agents>=1.8.3",
+    "livekit-api>=1.2.1",
+    "livekit-plugins-ai-coustics>=0.3.2",
+    "python-dotenv>=1.2.3",
+]
+
+[project.scripts]
+livekit-voiceagent = "livekit_voiceagent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.13,<0.13.0"]
+build-backend = "uv_build"
